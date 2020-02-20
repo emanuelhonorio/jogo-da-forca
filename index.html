@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Jogo da forca</title>
+</head>
+<body>
+    <div style="padding: 10px">Vidas: <span id="vida">5</span></div>
+    <div id="forca"><img src="forca-0.png" alt=""></div>
+
+    <div id="palavra"></div>
+    
+    <div class="teclado-container">
+        <div id="teclado"></div>
+    </div>
+
+    <script src="game.js"></script>
+    <script>
+        (function() {
+            var game = new Game();
+            game.init();
+        })();
+    </script>
+</body>
+</html>
